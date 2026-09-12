@@ -1,0 +1,5 @@
+FROM ghcr.io/cyber-dojo-languages/lua:6f7d3e0
+LABEL maintainer=jon@jaggersoft.com
+
+COPY install.sh .
+RUN ./install.sh && rm ./install.sh
